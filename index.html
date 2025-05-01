@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1">
+    <title>Navigation Bar</title>
+    <style type="text/css">
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: calibri;
+        }
+
+        .navbar {
+            background: black;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo a {
+            font-size: 30px;
+            font-weight: 300;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        li a {
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+
+        button {
+            background-color: white;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            border: none;
+        }
+
+        button a {
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .page {
+            position: relative;
+            width: 97%;
+            height: 380px;
+            background: url(images/background\ image.JPG) no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .hero-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); 
+            z-index: 1;
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            color: whitesmoke;
+            z-index: 3;
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            
+        }
+        .hero-text p {
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            z-index: 3;
+        }
+        .recipes {
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .recipes h1 {
+            text-align: center;
+            margin-bottom: 40px;   
+            margin-left: 10px; 
+        }
+        .recipe-section {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .pancakes {
+            padding: 20px;
+            margin-top: 90px;
+        }
+        .pancakes h1 {
+           font-size: 22px;
+        }
+        .pancakes-section {
+            width: 98%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        }
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar"> 
+    <div class="navdiv">
+        <div class="logo"><a href="index.html">The daily Bite</a></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="signup.html" class="signup-link">SignUp</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page">
+    <div class="hero-container">
+       <div class="hero-text">
+        <h1>Simple Recipes</h1>
+        <p>Recipes to fit your lifestyle</p>
+       </div>
+    </div>
+</section>
+
+<section class="recipes">
+    <h1>Top Recipes This Week</h1>
+    <div class="recipe-section">
+        <div class="recipe-card">
+            <img src="images/Foccacia.JPG" alt="">
+            <h2>Focaccia</h2>
+            <p>Total time: 45 mins | Difficulty: Easy | Vegan Friendly</p>
+            <a href="recipes.html">View Recipe</a>
+        </div>
+        <div class="recipe-card">
+            <img src="images/spicypasta.JPG" alt="">
+            <h2>Spicy Pasta</h2>
+            <p>Total time: 35 mins | Difficulty: Easy | Vegan Friendly</p>
+            <a href="recipes.html">View Recipe</a>
+        </div>
+        <div class="recipe-card">
+            <img src="images/fattoushsalad.JPG" alt="">
+            <h2>Fattoush Salad</h2>
+            <p>Total time: 35 mins | Difficulty: Easy | Gluten free</p>
+            <a href="recipes.html">View Recipe</a>
+        </div>
+    </div>
+<section>
+
+    <section class="pancakes">
+        <h1>National Pancake Day!</h1>
+        <div class="pancakes-section">
+            <div class="pancake-card">
+                <img src="images/classic.jpg" alt="">
+                <h3>Classic Recipes</h3>
+                <a href="recipes.html">View Recipe</a>
+            </div>
+            <div class="pancake-card">
+                <img src="images/savory.JPG" alt="">
+                <h3>Savory  Recipes</h3>
+                <a href="recipes.html">View Recipe</a>
+            </div>
+            <div class="pancake-card">
+                <img src="images/gluten.jpg" alt="">
+                <h3>Gluten Free Recipes</h3>
+                <a href="recipes.html">View Recipe</a>
+            </div>
+        </div>
+    <section>
+
+</body>
+</html>
