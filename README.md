@@ -72,6 +72,6 @@ Full testing was done on the following browsers:
 #### Solved bugs
 #### Known Bugs
 ## Credits/ References
-### Code Used: I used chat gpt code t help create Sign up page 
+### Code Used: I used chat gpt code to help create the sign up page and adding the navbar to the sign up page so it can link back.  
 ### Content
 ### Media
