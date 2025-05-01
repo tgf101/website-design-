@@ -72,6 +72,6 @@ Full testing was done on the following browsers:
 #### Solved bugs
 #### Known Bugs
 ## Credits/ References
-### Code Used
+### Code Used: I used chat gpt code t help create Sign up page 
 ### Content
 ### Media
